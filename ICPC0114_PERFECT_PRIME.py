@@ -8,13 +8,13 @@ def isPrime(n):
             return False
     return True
 
-def check(n):
+def check(s):
     m_list = ['2', '3', '5', '7']
     sum = 0
-    for i in n:
-        if i not in m_list:
+    for c in s:
+        if c not in m_list:
             return False
-        sum += int(i)
+        sum += int(c)
         if isPrime(sum):
             return True
         return False
